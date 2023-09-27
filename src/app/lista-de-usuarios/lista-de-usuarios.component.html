@@ -1,0 +1,17 @@
+<div class="toolbar">
+    <h1>My App</h1>
+</div>
+
+<div class="subtitulo">
+    <h2>Lista Estudiantes</h2>
+</div>
+
+<section class="lista">
+
+    <p *ngFor="let estudiante of estudiantes">
+        {{estudiante.nombre}} - {{estudiante.apellido}}
+        - {{estudiante.telefono}} - {{estudiante.email}}
+        - {{ estudiante.fechaInscripcion | date}}
+    </p>
+
+</section>
